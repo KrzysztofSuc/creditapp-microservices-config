@@ -2,7 +2,7 @@ server:
   port: 8761
 eureka:
   instance:
-    hostname: discavery-server
+    hostname: discovery-server
   client:
     registerWithEureka: false
     fetchRegistry: false
