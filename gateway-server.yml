@@ -9,3 +9,13 @@ zuul:
     credit-service:
       path: /credit/**
       serviceId: credit-service
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 80000
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
