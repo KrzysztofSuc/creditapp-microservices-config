@@ -9,6 +9,9 @@ zuul:
     credit-service:
       path: /credit/**
       serviceId: credit-service
+    auth-service:
+      path: /auth/**
+      serviceId: auth-service
 hystrix:
   command:
     default:
@@ -19,3 +22,5 @@ hystrix:
 ribbon:
   ReadTimeout: 20000
   ConnectTimeout: 20000
+jwt:
+  secret: alamakotakotmaale
